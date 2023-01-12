@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leader Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&family=Norican&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Poppins:wght@100;200;300;400;500;600;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d64724f41e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="one-row">
+          <div class="logo">
+            <img src="./images/icons/logo.png" alt="" /> Idea
+          </div>
+          <nav class="nav" id="navBar">
+            <ul>
+              <i
+                class="fa-solid fa-xmark close-humbar"
+                onclick="closeNav()"
+              ></i>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Works</a></li>
+              <li>
+                <a href=""
+                  ><div class="account">
+                    <img src="./images/icons/profile.png" alt="" /></div
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="humbar" onclick="viewNav()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- top player and top blog -->
+    <section class="content">
+      <div class="container">
+        <div class="inside-container">
+          <div class="top-player">
+            <h3 class="section-title">Top Player</h3>
+
+            <div class="players-profile one-row">
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+
+              <div class="player-profile">
+                <div class="player-img">
+                  <img src="./images/players/player-1.png" alt="" />
+                </div>
+                <p class="player-name">John Smith</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="top-blog">
+            <h3 class="section-title">Top Blog</h3>
+
+            <!-- blogs container -->
+            <div class="blogs-container">
+              <!-- single blog box -->
+              <div class="blog-container">
+                <div class="blog-img">
+                  <img src="./images/blogs/blog-1.png" alt="" />
+                </div>
+                <div class="blog-des">
+                  <h3 class="blog-title">
+                    13 of My Favorite<br />
+                    UI/UX Goodies
+                  </h3>
+                  <p class="blog-text"><span>By </span>Danny Sapio</p>
+                </div>
+              </div>
+
+              <div class="blog-container">
+                <div class="blog-img">
+                  <img src="./images/blogs/blog-2.png" alt="" />
+                </div>
+                <div class="blog-des">
+                  <h3 class="blog-title">
+                    UI cheat sheet:<br />
+                    list vs grids
+                  </h3>
+                  <p class="blog-text"><span>By </span>Danny Sapio</p>
+                </div>
+              </div>
+
+              <div class="blog-container">
+                <div class="blog-img">
+                  <img src="./images/blogs/blog-3.png" alt="" />
+                </div>
+                <div class="blog-des">
+                  <h3 class="blog-title">
+                    7 typography tips<br />
+                    for interface design
+                  </h3>
+                  <p class="blog-text"><span>By </span>Danny Sapio</p>
+                </div>
+              </div>
+
+              <div class="blog-container">
+                <div class="blog-img">
+                  <img src="./images/blogs/blog-4.png" alt="" />
+                </div>
+                <div class="blog-des">
+                  <h3 class="blog-title">
+                    Your logo is<br />
+                    copied
+                  </h3>
+                  <p class="blog-text"><span>By </span>Danny Sapio</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="LatesCourse">
+        
+        <div class="container">
+
+            <div class="inside-container">
+                <h3 class="section-title">Lates Course</h3>
+
+                <div class="courses-box">
+                    <!-- single course box  -->
+                    <div class="course-box">
+                        <div class="course-img">
+                            <img src="./images/courses/course-1.png" alt="">
+                        </div>
+                        <h3 class="course-title">
+                            React - The Complete <br>
+                            Guide 2020
+                        </h3>
+                        <p class="mentor-name">Reed Krakoff.</p>
+                        <div class="course-feedback-box">
+                            <div class="stars">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                            </div>
+                            <p class="course-ratting">4.5</p>
+                            <div class="couse-hours">
+                                <img src="./images/icons/clock.png" alt="">
+                                <span>01:30hr</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="course-box">
+                        <div class="course-img">
+                            <img src="./images/courses/course-2.png" alt="">
+                        </div>
+                        <h3 class="course-title">
+                            Powerpoint 2020  <br>
+                            Master Powerpoint Cour
+                        </h3>
+                        <p class="mentor-name">Walter Scott</p>
+                        <div class="course-feedback-box">
+                            <div class="stars">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                            </div>
+                            <p class="course-ratting">4.5</p>
+                            <div class="couse-hours">
+                                <img src="./images/icons/clock.png" alt="">
+                                <span>01:30hr</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-box">
+                        <div class="course-img">
+                            <img src="./images/courses/course-1.png" alt="">
+                        </div>
+                        <h3 class="course-title">
+                            The Complete JavaScript  <br>
+                            Course 2020
+                        </h3>
+                        <p class="mentor-name">Reed Krakoff.</p>
+                        <div class="course-feedback-box">
+                            <div class="stars">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                                <img src="./images/icons/star.png" alt="">
+                            </div>
+                            <p class="course-ratting">4.5</p>
+                            <div class="couse-hours">
+                                <img src="./images/icons/clock.png" alt="">
+                                <span>01:30hr</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
